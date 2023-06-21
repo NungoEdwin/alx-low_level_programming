@@ -1,40 +1,30 @@
-include "main.h"
+#include "main.h"
 
 /**
- * main - outputing numbers upto 98
  * print_to_98 - printing
- *
- * Return: Always 0.
+ *@n : param
  */
-void print_to_98(int n);
-
-int main(void)
-{
-	print_to_98(0);
-	print_to_98(98);
-	print_to_98(111);
-	print_to_98(81);
-	print_to_98(-10);
-return (0);
-}
 void print_to_98(int n)
 {
-	if (n < 98)
+	if (n <= 98)
 	{
-		for (n; n <= 98; n++)
-			_putchar(n);
-			_putchar(',');
-			_putchar(' ');
+		for (n = n; n <= 98; n++)
+		{
+			if (n == 98)
+				printf("%d", n);
+			else
+				printf("%d , ", n);
+		}
 	}
 	else
 	{
-		for (n; n >= 98; n--)
+		for (n = n; n >= 98; n--)
 		{
-			_putchar(n);
-			_putchar(',');
-			_putchar(' ');
+			if (n == 98)
+				printf("%d", n);
+			else
+				printf("%d , ", n);
 		}
 	}
-_putchar('\n');
-return;
+	putchar('\n');
 }
