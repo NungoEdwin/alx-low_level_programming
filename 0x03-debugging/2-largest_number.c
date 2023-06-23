@@ -18,9 +18,9 @@ largest = a;
 }
 else if (b > a && b > c)
 {
-	largest = b;
+largest = b;
 }
-else
+else if (c > a && c > b)
 {
 largest = c;
 }
