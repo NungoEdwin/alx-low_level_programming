@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 /**
  * _strcpy - fxn copies pointer to another
  * @dest:parameter 1
@@ -7,7 +8,12 @@
  */
 char _strcpy(char *dest,char *src)
 {
+	char a;
+
+	/*strcpy(dest, src);*/
 	*dest = *src;
 
-	return (*dest);
+	a = *dest;
+
+	return (a);
 }
