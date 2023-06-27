@@ -6,14 +6,11 @@
  * @src:parameter 2
  * Return:returns a char type
  */
-char _strcpy(char *dest,char *src)
+char* _strcpy(char *dest,char *src)
 {
-	char a;
 
-	/*strcpy(dest, src);*/
-	*dest = *src;
+	strcpy(dest, src);
 
-	a = *dest;
 
-	return (a);
+	return (dest);
 }
