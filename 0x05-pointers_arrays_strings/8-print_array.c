@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include "main.h"
+#include "_putchar.c"
 /**
  * print_array - fxn prnting array
  *@a:array
@@ -10,13 +11,18 @@ void print_array(int *a, int n)
 
 	if (n > 0)
 	{
-	for (i = 0; i < n; i++)
-	{
-		if (i != (n - 1))
-		printf("%d, ", a[i]);
-		else
-			printf("%d\n", a[i]);
-	}
+		for (i = 0; i < n; i++)
+		{
+			if (i != --n)
+			{
+				printf("%d", a[i]);
+				_putchar('\n');
+			}
+			else if (i == --n)
+			{
+				printf("%d", a[i]);
+			}
+		}
 	}
 
 }
