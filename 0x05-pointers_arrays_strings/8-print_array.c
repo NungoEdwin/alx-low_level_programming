@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar.c"
 /**
  * print_array - fxn prnting array
  *@a:array
@@ -22,7 +21,7 @@ void print_array(int *a, int n)
 				printf("%d", a[i]);
 			}
 		}
-		_putchar('\n');
+		printf("\n");
 	}
 
 }
