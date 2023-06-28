@@ -13,13 +13,13 @@ void puts_half(char *str)
 	{
 		n = (l - 1) / 2;
 		for (i = n; i < l; i++)
-			printf("%c", str[i]);
+			_putchar(str[i]);
 	}
 	else if ((l % 2) == 0)
 	{
 		n = l / 2;
 		for (i = n; i < l; i++)
-			printf("%c", str[i]);
+			_putchar(str[i]);
 	}
 	_putchar('\n');
 }
