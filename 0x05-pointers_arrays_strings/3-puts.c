@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * _puts - fxn 
+ * _puts - fxn
  * @str:the string param
  */
 void _puts(char *str)
