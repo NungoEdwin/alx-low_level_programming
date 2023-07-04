@@ -7,10 +7,10 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-char a;
+	char *a;
 
-	if ((a = *strstr(char *haystack, char *needle))
-			return (a);
-	else
-			return (NULL);
+	a = strstr(haystack, needle);
+	
+	return (a);
+
 }
