@@ -7,9 +7,5 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	if ((char *strpbrk(char *s, char *accept))
-		return (s);
-	else
-		return (NULL);
-
+	return (strpbrk(s, accept));
 }

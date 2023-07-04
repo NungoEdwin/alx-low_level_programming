@@ -7,8 +7,5 @@
  */
 char *_strchr(char *s, char c)
 {
-	if (char strchr(char *s, char c))
-		return (s);
-	else
-		return (NULL);
+	return (strchr(s, c));
 }
