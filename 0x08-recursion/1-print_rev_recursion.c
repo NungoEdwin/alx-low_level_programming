@@ -1,14 +1,20 @@
 #include "main.h"
+#include <string.h>
 /**
  * _print_rev_recursion -fxn
  * @s: the string
  */
 void _print_rev_recursion(char *s)
 {
-        if (*s == '\0')
+       char *p;
+	p = (strchr(s, *s == '\0'));       
+
+	if (s < p)
 	{
-		_putchar(*(s - 1));
+		p--;
+		_putchar(*p);
+	
+		_print_rev_recursion(p);
 	}
-	_print_rev_recursion(s + 1);
         _putchar('\n');
 }
