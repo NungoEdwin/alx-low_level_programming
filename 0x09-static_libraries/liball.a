@@ -1,0 +1,242 @@
+!<arch>
+0-isupper.c/    0           0     0     644     104       `
+#include "main.h"
+/**
+ * _isupper -fxn
+ * @c:int
+ * Return:int
+ */
+int _isupper(int c)
+{
+	return (0);
+}
+0-memset.c/     0           0     0     644     141       `
+#include "main.h"
+/**
+ * _memset -fxn
+ * @s:str
+ * @b:str
+ * @n:int
+ * Return:pointer
+ */
+char *_memset(char *s, char b, unsigned int n)
+{
+}
+
+0-strcat.c/     0           0     0     644     126       `
+#include "main.h"
+/**
+ * _strcat -fxn
+ * @dest:str
+ * @src:str
+ * Return:pointer
+ */
+char *_strcat(char *dest, char *src)
+{
+}
+100-atoi.c/     0           0     0     644     100       `
+#include "main.h"
+/**
+ * _atoi -fxn
+ * @s:str
+ * Return:int
+ */
+int _atoi(char *s)
+{
+	return (0);
+}
+1-isdigit.c/    0           0     0     644     104       `
+#include "main.h"
+/**
+ * _isdigit -fxn
+ * @c:int
+ * Return:int
+ */
+int _isdigit(int c)
+{
+	return (0);
+}
+1-memcpy.c/     0           0     0     644     152       `
+#include "main.h"
+/**
+ * _memcpy -fxn
+ * @dest:str
+ * @src:str
+ * @n:int
+ * Return:pointer
+ */
+char *_memcpy(char *dest, char *src, unsigned int n)
+{
+}
+1-strncat.c/    0           0     0     644     161       `
+#include "main.h"
+/**
+ * _strncat -fxn
+ * @dest:str
+ * @src:str
+ * @n:int
+ * Return:pointer
+ */
+char *_strncat(char *dest, char *src, int n)
+{
+	return (dest);
+}
+
+2-strchr.c/     0           0     0     644     128       `
+#include "main.h"
+/**
+ * _strchr -fxn
+ * @s:str
+ * @c:str
+ * Return:pointer
+ */
+char *_strchr(char *s, char c)
+{
+	return (s);
+}
+2-strlen.c/     0           0     0     644     104       `
+#include "main.h"
+/**
+ * _strlen -fxn
+ * @s:int
+ * Return:int
+ */
+int _strlen(char *s)
+{
+	return (0);
+}
+2-strncpy.c/    0           0     0     644     161       `
+#include "main.h"
+/**
+ * _strncpy -fxn
+ * @dest:str
+ * @src:str
+ * @n:int
+ * Return:pointer
+ */
+char *_strncpy(char *dest, char *src, int n)
+{
+	return (dest);
+}
+
+3-islower.c/    0           0     0     644     104       `
+#include "main.h"
+/**
+ * _islower -fxn
+ * @c:int
+ * Return:int
+ */
+int _islower(int c)
+{
+	return (0);
+}
+3-puts.c/       0           0     0     644     75        `
+#include "main.h"
+/**
+ * _puts -fxn
+ * @s:char
+ */
+void _puts(char *s)
+{
+}
+
+3-strcmp.c/     0           0     0     644     133       `
+#include "main.h"
+/**
+ * _strcmp -fxn
+ * @s1:str
+ * @s2:str
+ * Return:pointer
+ */
+char _strcmp(char *s1, char *s2)
+{
+	return (s1);
+}
+
+3-strspn.c/     0           0     0     644     147       `
+#include "main.h"
+/**
+ * _strspn -fxn
+ * @s:str
+ * @accept:str
+ * Return:pointer
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+	return (&s);
+}
+
+4-isalpha.c/    0           0     0     644     104       `
+#include "main.h"
+/**
+ * _isalpha -fxn
+ * @c:int
+ * Return:int
+ */
+int _isalpha(int c)
+{
+	return (0);
+}
+4-strpbrk.c/    0           0     0     644     141       `
+#include "main.h"
+/**
+ * _strpbrk -fxn
+ * @s:str
+ * @accept:str
+ * Return:pointer
+ */
+char *_strpbrk(char *s, char *accept)
+{
+	return (s);
+}
+
+5-strstr.c/     0           0     0     644     160       `
+#include "main.h"
+/**
+ * _strstr -fxn
+ * @haystack:str
+ * @needle:str
+ * Return:pointer
+ */
+char *_strstr(char *haystack, char *needle)
+{
+	return (haystack);
+}
+6-abs.c/        0           0     0     644     96        `
+#include "main.h"
+/**
+ * _abs -fxn
+ * @n:int
+ * Return:int
+ */
+int _abs(int n)
+{
+	return (0);
+}
+9-strcpy.c/     0           0     0     644     142       `
+#include "main.h"
+/**
+ * _strcpy -fxn
+ * @dest:str
+ * @src:str
+ * Return:pointer
+ */
+char *_strcpy(char *dest, char *src)
+{
+	return (dest);
+}
+_putchar.c/     0           0     0     644     247       `
+#include <unistd.h>
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
+}
+
