@@ -17,7 +17,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		len++;
 
 	mpya = malloc(sizeof(list_t));
-	if (!new)
+	if (!mpya)
 		return (NULL);
 	mpya->str = strdup(str);
 	mpya->len = len;
@@ -32,5 +32,5 @@ list_t *add_node_end(list_t **head, const char *str)
 	while (swap->next)
 		swap = swap->next;
 	swap->next = mpya;
-	return (new);
+	return (mpya);
 }
