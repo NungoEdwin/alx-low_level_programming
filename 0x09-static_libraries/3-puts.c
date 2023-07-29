@@ -1,6 +1,6 @@
 #include "main.h"
 #include <string.h>
-
+#include "_putchar.c"
 /**
  * _puts -fxn
  * @s:char
