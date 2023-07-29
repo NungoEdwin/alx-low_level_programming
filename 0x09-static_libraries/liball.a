@@ -1,6 +1,5 @@
 !<arch>
-0-isupper.c/    0           0     0     644     104       `
-#include "main.h"
+0-isupper.c/    0           0     0     644     86        `
 /**
  * _isupper -fxn
  * @c:int
@@ -130,17 +129,23 @@ int _islower(int c)
 {
 	return (0);
 }
-3-puts.c/       0           0     0     644     75        `
+3-puts.c/       0           0     0     644     176       `
 #include "main.h"
+#include <string.h>
 /**
  * _puts -fxn
  * @s:char
  */
 void _puts(char *s)
 {
-}
+	int i, strl;
 
-3-strcmp.c/     0           0     0     644     133       `
+	strl = strlen(s);
+
+	for (i = 0 ; i < strl; i++)
+		_putchar(s[i];
+}
+3-strcmp.c/     0           0     0     644     131       `
 #include "main.h"
 /**
  * _strcmp -fxn
@@ -148,12 +153,12 @@ void _puts(char *s)
  * @s2:str
  * Return:pointer
  */
-char _strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
-	return (s1);
+	return (0);
 }
 
-3-strspn.c/     0           0     0     644     147       `
+3-strspn.c/     0           0     0     644     146       `
 #include "main.h"
 /**
  * _strspn -fxn
@@ -163,9 +168,8 @@ char _strcmp(char *s1, char *s2)
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	return (&s);
+	return (0);
 }
-
 4-isalpha.c/    0           0     0     644     104       `
 #include "main.h"
 /**
