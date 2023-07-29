@@ -13,4 +13,5 @@ void _puts(char *s)
 
 	for (i = 0 ; i < strl; i++)
 		_putchar(s[i]);
+	_putchar('\n');
 }
