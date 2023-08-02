@@ -20,10 +20,10 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 	add->n = n;
 
 	while (*head != NULL)
-        {
-               *head = swap->next;
+	{
+		*head = swap->next;
 
-        }
+	}
 
 	if (*head == NULL)
 	{
