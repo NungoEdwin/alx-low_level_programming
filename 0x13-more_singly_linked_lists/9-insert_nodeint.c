@@ -17,20 +17,19 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 	swap = *head;
 
-
+	if (idx == 0)
+        {
+                new->next = swap;
+                new->n = n;
+                swap = new;
+                return (new);
+        }
 	for (i = 0; i < (idx - 1); i++)
 	{
 		swap = swap->next;
 	}
-	if (!swap || !new)
+	if (!swap || !new || !head)
 		return (NULL);
-	if (idx == 0)
-	{
-		new->next = *head;
-		new->n = n;
-		*head = new;
-		return (new);
-	}
 	new->next = swap->next;
 	new->n = n;
 	swap->next = new;
