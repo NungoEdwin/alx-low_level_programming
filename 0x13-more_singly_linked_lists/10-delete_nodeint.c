@@ -15,6 +15,12 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 
 	swap = *head;
 
+	if (index == 0)
+	{
+		*head = (*head)->next;
+		free(swap);
+		return (1);
+	}
 
 	for (i = 0; i < (index - 1); i++)
 	{
