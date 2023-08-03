@@ -26,9 +26,9 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	{
 		swap = swap->next;
 	}
-	delete = swap->next;
-	if (!swap || swap->next == NULL || !delete)
+	if (!swap || swap->next == NULL)
 		return (-1);
+	delete = swap->next;
 	swap->next = delete->next;
 	free(delete);
 	return (1);
