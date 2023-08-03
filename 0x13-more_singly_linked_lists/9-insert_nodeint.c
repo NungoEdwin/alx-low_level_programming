@@ -11,14 +11,14 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *swap, *new;
 
-	new = malloc(sizeof(listint_t));
+	unsigned int i;
 
-	unsigned int i, b = 1;
+	new = malloc(sizeof(listint_t));
 
 	swap = *head;
 
 
-	for (i = 0; i < (idx - b); i++)
+	for (i = 0; i < (idx - 1); i++)
 	{
 		swap = swap->next;
 	}
