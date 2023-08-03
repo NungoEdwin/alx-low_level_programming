@@ -8,7 +8,7 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *swap;
+	listint_t *swap, *delete;
 
 	unsigned int i;
 
@@ -19,8 +19,10 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	{
 		swap = swap->next;
 	}
-	if (!swap || swap->next == NULL)
+	delete = swap->next;
+	if (!swap || swap->next == NULL || !delete)
 		return (-1);
-	swap->next = swap->next->next;
+	swap->next = delete->next;
+	free(delete);
 	return (1);
 }
